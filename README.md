@@ -611,3 +611,79 @@ Now we need to analyse the waveforms of the instructions that are used in the ve
 ![SLL_10_4](https://github.com/user-attachments/assets/3deefd03-aa00-4673-8f4a-613c9e4b365e)
 
 </details>
+
+------------------------------------
+
+
+<details>
+<summary><b>Task 5:</b> Buzzer Control Implementation on VSDSquadron FPGA </summary>   
+<br>
+
+**Design and Implementation of Buzzer Control Circuit Using VSDSquadron FPGA**
+
+![pinout diagram](https://github.com/user-attachments/assets/6681748a-0273-4f3a-9ed2-4a57a045f118)
+
+---
+
+#### **Circuit Overview**  
+
+This project demonstrates a simple buzzer control circuit implemented using the **VSDSquadron FPGA**. The system utilizes a push button to toggle the buzzer's state, switching it **ON** or **OFF** each time the button is pressed.  
+
+---
+
+#### **Circuit Explanation**  
+
+- A **push button** is connected to **PD0**, configured as an input pin.  
+- A **buzzer** is connected to **PD2**, set as an output pin.  
+- When the button is pressed, the buzzer **toggles** between **ON** and **OFF** states.  
+- **Debouncing logic** is implemented to ensure stable button press detection and avoid false triggers.  
+
+---
+
+#### **How It Works**  
+
+1. **Button Press Detection:**  
+   - The FPGA monitors the **PD0 pin** for a button press event.  
+   - If detected, the program applies **debounce logic** to eliminate unintended rapid state changes.  
+
+2. **Buzzer Toggle:**  
+   - Once a valid button press is confirmed, the buzzer state stored in a variable **flips** (ON → OFF or OFF → ON).  
+   - The updated state is then sent to **PD2**, activating or deactivating the buzzer.  
+
+3. **State Persistence:**  
+   - The buzzer remains in its current state until the button is pressed again.  
+
+---
+
+#### **Applications**  
+
+- **Alarm Systems:** Used in security and emergency alert circuits.  
+- **User Feedback Mechanisms:** Can be integrated into control panels or embedded systems.  
+- **Notification Systems:** Useful for signaling specific events in industrial automation.  
+
+This simple implementation effectively demonstrates **GPIO control**, **state toggling**, and **input debouncing** using **VSDSquadron FPGA**. 🚀
+
+</details>
+
+
+------------------------------------
+
+
+<details>
+   
+<summary><b>Task 6:</b> Push-Button Operated Buzzer on VSDSquadron Mini – Functionality & Execution </summary>   
+<br>
+
+
+** Video: Push-Button Controlled Buzzer on VSDSquadron FPGA (CH32V00x)**
+
+
+
+
+
+https://github.com/user-attachments/assets/d45ed5ce-5e65-4771-83c5-2dfc40c0d680
+
+
+
+</details>
+
